@@ -1,0 +1,15 @@
+server {
+    listen       8080;
+    server_name  localhost;
+    root         /Users/Arnaud/Sites;
+ 
+    access_log  /usr/local/etc/nginx/logs/default.access.log  main;
+ 
+    location / {
+        include   /usr/local/etc/nginx/conf.d/php-fpm;
+    }
+
+    location ~ /\.ht {
+        deny  all;
+    }
+}
