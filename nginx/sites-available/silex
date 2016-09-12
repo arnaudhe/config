@@ -1,7 +1,7 @@
 server {
     listen       8081;
     server_name  localhost;
-    root         /Users/Arnaud/Sites;
+    root         /Users/Arnaud/Sites/silex_skeleton/web;
  
     access_log  /usr/local/nginx/logs/silex.access.log  main;
  
